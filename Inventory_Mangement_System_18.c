@@ -16,7 +16,7 @@ int num_products = 0,i,j;
 
 void load_inventory() {
     FILE *fp;
-    fp = fopen("inventory.txt", "r");
+    fp = fopen("inventory.txt", "w");
     if (fp == NULL) {
         printf("Error: cannot open inventory file\n");
         return;
